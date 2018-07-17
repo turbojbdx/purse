@@ -4,4 +4,6 @@ import Entry
 import User
 
 main :: IO ()
-main = setupUser
+main = do 
+  user <- setupUser
+  printUser user
